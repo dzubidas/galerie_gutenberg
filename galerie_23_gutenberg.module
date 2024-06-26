@@ -4,7 +4,16 @@ use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
  * Implements hook_page_attachments().
+ *
+ * This hook is used to add attachments to all pages.
+ * In this case, it's attaching a custom library to enhance Gutenberg editor functionality.
+ *
+ * @param array $attachments
+ *   An array of all attachments (typically JavaScript and CSS) for a page.
  */
 function galerie_23_gutenberg_page_attachments(array &$attachments) {
+    // Attach the custom Gutenberg styles library to all pages.
+    // This library is defined in galerie_23_gutenberg.libraries.yml
+    // It includes custom JavaScript that modifies Gutenberg editor behavior.
     $attachments['#attached']['library'][] = 'galerie_23_gutenberg/custom-gutenberg-styles';
 }
