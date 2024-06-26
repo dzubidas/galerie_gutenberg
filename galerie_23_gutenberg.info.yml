@@ -1,0 +1,5 @@
+name: 'galerie_23_gutenberg'
+type: module
+description: 'This Drupal 10 module customizes the content editing interface, adding specialized formatting options for text, images, and other elements.'
+package: Custom
+core_version_requirement: ^8 || ^9 || ^10

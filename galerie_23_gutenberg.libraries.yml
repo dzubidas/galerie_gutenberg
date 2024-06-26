@@ -1,0 +1,9 @@
+custom-gutenberg-styles:
+  version: VERSION
+  js:
+    js/gutenberg.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
